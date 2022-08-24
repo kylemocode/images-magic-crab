@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/grayscale.js": {
+      "includeFiles": "api/**",
+      "excludeFiles": "api/functions/**"
+    }
+  }
+}
