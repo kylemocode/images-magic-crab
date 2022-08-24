@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/grayscale.js": {
+    "api/grayscale-img.js": {
       "includeFiles": "api/**",
       "excludeFiles": "api/functions/**"
     }
