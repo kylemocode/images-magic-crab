@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
-const Home: NextPage = () => {
+const Blur: NextPage = () => {
   const [enableWasm, setEnableWasm] = useState(false);
   const [origImg, setOrigImg] = useState(null);
   const [resImg, setResImg] = useState(null);
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
     reader.onload = function (e) {
       setLoading(true);
       var oReq = new XMLHttpRequest();
-      oReq.open('POST', '/api/grayscale-img', true);
+      oReq.open('POST', '/api/blur-img', true);
       oReq.setRequestHeader('image-type', origImg.file.type);
       oReq.responseType = 'blob';
       oReq.onload = (function (bImg) {
@@ -109,4 +109,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Blur;

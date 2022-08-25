@@ -3,6 +3,10 @@
     "api/grayscale-img.js": {
       "includeFiles": "api/grayscale-img.js",
       "excludeFiles": "api/functions/**"
+    },
+    "api/blur-img.js": {
+      "includeFiles": "api/blur-img.js",
+      "excludeFiles": "api/functions/**"
     }
   }
 }
