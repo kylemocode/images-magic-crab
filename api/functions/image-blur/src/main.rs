@@ -7,7 +7,7 @@ fn main() {
 
   let image_format_detected: ImageFormat = image::guess_format(&buf).unwrap();
   let img = image::load_from_memory(&buf).unwrap();
-  let filtered = img.blur(0.5);
+  let filtered = img.blur(5.0);
   let mut buf = vec![];
   match image_format_detected {
     ImageFormat::Gif => {
